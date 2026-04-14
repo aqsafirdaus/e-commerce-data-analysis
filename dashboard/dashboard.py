@@ -55,7 +55,7 @@ main_df['order_purchase_timestamp'] = pd.to_datetime(
     main_df['order_purchase_timestamp'], errors='coerce'
 )
 
-monthly_df = main_df.resample(rule='M', on='order_purchase_timestamp').agg({
+monthly_df = main_df.resample(rule='ME', on='order_purchase_timestamp').agg({
     "order_id": "nunique",
     "total_price": "sum"
 }).reset_index()
