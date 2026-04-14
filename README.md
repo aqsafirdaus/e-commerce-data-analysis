@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ## ▶️ Menjalankan Dashboard
 
 ```
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
 ```
 
 ---
